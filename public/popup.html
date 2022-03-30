@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+    <script src="popup.js"></script>
+
+    <style>
+      body {
+        padding: 10px 30px;
+      }
+      .input-label {
+        width: 140px;
+        display: block;
+        background: dodgerblue;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+      }
+      .input-label:hover {
+        background: skyblue;
+      }
+
+      #run_rclone_tool_keep_password,
+      #export_rclone {
+        width: 200px;
+        display: block;
+        background: dodgerblue;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        transition: all 0.2s;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      #run_rclone_tool_keep_password:hover,
+      #export_rclone:hover {
+        background: skyblue;
+      }
+      #input-file {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label class="input-label" for="input-file">Chọn tệp để import</label>
+      <br />
+      <input type="file" id="input-file" />
+    </div>
+
+    <button id="run_rclone_tool_keep_password" onclick="">
+      Chạy tool Rclone (Keep Password)
+    </button>
+    <button id="export_rclone" onclick="">Export Rclone</button>
+  </body>
+</html>
